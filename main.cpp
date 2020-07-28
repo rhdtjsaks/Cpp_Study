@@ -518,3 +518,111 @@
 //}
 
 #pragma endregion
+
+#pragma region [Brute-Force / Baek-1476]
+#/*include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int E, S, M;
+	cin >> E >> S >> M;
+
+	int e = 0, s = 0, m = 0, y = 0;
+
+	while (true)
+	{
+		e++ , s++, m++, y++;
+
+		if (e > 15) e = 1;
+		if (s > 28) s = 1;
+		if (m > 19) m = 1;
+
+		if (e == E && s == S && m == M) break;
+	}
+
+	cout << y << endl;
+
+	return 0;
+}*/
+#pragma endregion
+
+#pragma region [Brute-Force / Baek-1107]
+//#include <iostream>
+//
+//using namespace std;
+//
+//bool broken[10] = { false , };
+//
+//int possible(int c)
+//{
+//	if (c == 0)
+//	{
+//		if (broken[0])
+//		{
+//			return false;
+//		}
+//		else
+//		{
+//			return true;
+//		}
+//	}
+//
+//	int len = 0;
+//
+//	while (c > 0)
+//	{
+//		if (broken[c % 10])
+//		{
+//			return false;
+//		}
+//		len += 1;
+//		c /= 10;
+//	}
+//	return len;
+//}
+//
+//
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//
+//	for (int i = 0; i < m; i++)
+//	{
+//		int x;
+//		cin >> x;
+//		broken[x] = true;
+//	}
+//
+//	int ans = n - 100;
+//	
+//	if (ans < 0)
+//	{
+//		ans = -ans;
+//	}
+//
+//	for (int i = 0; i <= 1000000; i++)
+//	{
+//		int c = i;
+//		int len = possible(c);
+//		if (len > 0)
+//		{
+//			int press = c - n;
+//			if (press < 0)
+//			{
+//				press = -press;
+//			}
+//			if (ans > len + press)
+//			{
+//				ans = len + press;
+//			}
+//		}
+//	}
+//
+//	cout << ans << endl;
+//
+//	return 0;
+//}
+#pragma endregion
