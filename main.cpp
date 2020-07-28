@@ -626,3 +626,45 @@ int main()
 //	return 0;
 //}
 #pragma endregion
+
+#pragma region [Greedy / Baek - 11047]
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+	int N, M;
+	cin >> N >> M;
+
+	vector<int> v(N);
+	
+	for (int i = 0; i < N; i++)
+	{
+		cin >> v[i];
+	}
+
+	int cnt = 0;
+
+	while (M != 0)
+	{
+		for (int i = N - 1; i >= 0; i--)
+		{
+			if (M >= v[i])
+			{
+				M -= v[i];
+				break;
+			}
+		}
+
+		cnt++;
+	}
+
+	cout << cnt << endl;
+
+	return 0;
+}
+
+
+#pragma endregion
