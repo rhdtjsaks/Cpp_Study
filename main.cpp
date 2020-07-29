@@ -628,43 +628,108 @@ int main()
 #pragma endregion
 
 #pragma region [Greedy / Baek - 11047]
-#include <iostream>
-#include <vector>
+//#include <iostream>
+//#include <vector>
+//
+//using namespace std;
+//
+//int main()
+//{
+//	int N, M;
+//	cin >> N >> M;
+//
+//	vector<int> v(N);
+//	
+//	for (int i = 0; i < N; i++)
+//	{
+//		cin >> v[i];
+//	}
+//
+//	int cnt = 0;
+//
+//	while (M != 0)
+//	{
+//		for (int i = N - 1; i >= 0; i--)
+//		{
+//			if (M >= v[i])
+//			{
+//				M -= v[i];
+//				break;
+//			}
+//		}
+//
+//		cnt++;
+//	}
+//
+//	cout << cnt << endl;
+//
+//	return 0;
+//}
+#pragma endregion
 
-using namespace std;
-
-int main()
-{
-	int N, M;
-	cin >> N >> M;
-
-	vector<int> v(N);
-	
-	for (int i = 0; i < N; i++)
-	{
-		cin >> v[i];
-	}
-
-	int cnt = 0;
-
-	while (M != 0)
-	{
-		for (int i = N - 1; i >= 0; i--)
-		{
-			if (M >= v[i])
-			{
-				M -= v[i];
-				break;
-			}
-		}
-
-		cnt++;
-	}
-
-	cout << cnt << endl;
-
-	return 0;
-}
-
-
+#pragma region [Binary Search / Baek - 1654]
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//int N, K;
+//int v[10000];
+//
+//int check(int len)
+//{
+//	int cnt = 0;
+//
+//	for (int i = 0; i < N; i++)
+//	{
+//		cnt += v[i] / len;
+//	}
+//
+//	return cnt >= K;
+//}
+//
+//int main()
+//{
+//	cin >> N >> K;
+//
+//	int max = 0;
+//
+//	for (int i = 0; i < N; i++)
+//	{
+//		int x;
+//		cin >> x;
+//		v[i] = x;
+//
+//		if (max < v[i])
+//		{
+//			max = v[i];
+//		}
+//	}
+//
+//	int ans = 0;
+//	int left = 0, right = max;
+//
+//	while (left <= right)
+//	{
+//		int mid = (left + right) / 2;
+//
+//		if (check(mid))
+//		{
+//			if (ans < mid)
+//			{
+//				ans = mid;
+//			}
+//			left = mid + 1;
+//		}
+//		else
+//		{
+//			right = mid - 1;
+//		}
+//	}
+//
+//	cout << ans << endl;
+//
+//	return 0;
+//}
 #pragma endregion
